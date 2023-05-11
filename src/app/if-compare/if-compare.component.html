@@ -1,0 +1,11 @@
+<p>if-compare works!</p>
+Value of X is {{this.X}} 
+<br>
+Value of Y is {{this.Y}}<br>
+----------------------------------------Getting Outcome--------------------------------------------
+<div *ngIf="X > Y; else yIsGreater">
+  <p><b> X is greater</b> </p>
+</div>
+<ng-template #yIsGreater>
+    <p><b>Y is greater</b></p>
+  </ng-template>
